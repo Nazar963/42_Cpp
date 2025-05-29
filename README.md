@@ -2,19 +2,19 @@
 
 [![42 School](https://img.shields.io/badge/42-School-blue)](https://42firenze.it/)
 [![GitHub license](https://img.shields.io/github/license/Nazar963/Tester_variable_expansion)](https://github.com/Nazar963/42_Cpp/blob/master/LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/Nazar963/42_Cpp/.github/workflows/build.yml?branch=main)](https://github.com/Nazar963/42_Cpp/actions/workflows/build.yml)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Nazar963/42_Cpp/.github/workflows/build.yml?branch=master)](https://github.com/Nazar963/42_Cpp/actions/workflows/build.yml)
 
 This repository contains my solutions to all 10 C++ modules (CPP00 to CPP09) from the 42 School curriculum. Each module builds upon the previous, taking you from C++ fundamentals to advanced concepts through practical projects.
 
 ## Table of Contents 📖
-1. [Curriculum Overview](#curriculum-overview-)
-2. [Module Breakdown](#module-breakdown-)
-3. [Compilation Guide](#compilation-guide-)
-4. [Resources](#resources-)
-5. [Acknowledgments](#acknowledgments-)
-6. [License](#license-)
+1. [Curriculum Overview](#curriculum-overview)
+2. [Module Breakdown](#module-breakdown)
+3. [Compilation Guide](#compilation-guide)
+4. [Resources](#resources)
+5. [Acknowledgments](#acknowledgments)
+6. [License](#license)
 
-## Curriculum Overview 📊
+## Curriculum Overview
 
 | Module | Difficulty | Key Concepts | Hours Invested | LOC Written |
 |--------|------------|--------------|----------------|-------------|
@@ -31,7 +31,7 @@ This repository contains my solutions to all 10 C++ modules (CPP00 to CPP09) fro
 
 **Total Investment**: 430 hours, 28,000+ lines of code
 
-## Module Breakdown 🔍
+## Module Breakdown
 
 ### CPP00: C++ Basics
 - **Key Concepts**: Namespaces, classes, member functions, stdio streams, initialization lists
@@ -106,7 +106,7 @@ This repository contains my solutions to all 10 C++ modules (CPP00 to CPP09) fro
   2. Bitcoin Exchange (real-world data processing)
 - **Skills**: Advanced template techniques, metaprogramming
 
-## Compilation Guide ⚙️
+## Compilation Guide
 
 ### Requirements
 - C++ compiler (g++ or clang++)
@@ -119,19 +119,16 @@ This repository contains my solutions to all 10 C++ modules (CPP00 to CPP09) fro
 cd CPP0X
 make
 
-# Run tests (module specific)
-make test
-
 # Clean build artifacts
 make fclean
 ```
 
 ### Compiler Flags
 ```makefile
-CXXFLAGS = -Wall -Wextra -Werror -std=c++20 -pedantic
+CXXFLAGS = -Wall -Wextra -Werror -std=c++99
 ```
 
-## Resources 📚
+## Resources
 
 ### Essential Books
 1. **The C++ Programming Language** (Bjarne Stroustrup)
@@ -147,23 +144,32 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++20 -pedantic
 - [C++17/20 Features](https://github.com/AnthonyCalandra/modern-cpp-features)
 - [STL Containers Quick Reference](https://hackingcpp.com/cpp/cheat_sheets.html)
 
-### 42-Specific
-- [42 C++ Piscine Guide](https://github.com/achrafelkhnissi/42-piscine-cpp)
-- [C++ Module Checklist](https://github.com/Glagan/42-cpp-module-checklist)
-
-## Acknowledgments 🙏
+## Acknowledgments
 
 - **42 School** for the comprehensive C++ curriculum
 - **Bjarne Stroustrup** for creating C++
 - Peer reviewers at **42 Network**
 - C++ community for invaluable resources
 
+## 🤝 Contributing
+Feel free to submit issues or pull requests if you have suggestions for improving the test suite or adding more test cases.
 
-## License 📄
+## License
 This work is licensed under the MIT License - see [LICENSE](LICENSE) for details.
+
+## 📧 Contact
+For questions or feedback, please open an issue in the repository.
+
+## ⭐ Star this repository if you found it helpful!
+[![GitHub stars](https://img.shields.io/github/stars/Nazar963/42_Cpp?style=social)](https://github.com/Nazar963/42_Cpp/stargazers)
 
 ---
 
 🦉 *"C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do, it blows away your whole leg."* - Bjarne Stroustrup  
-[![42 Profile](https://img.shields.io/badge/Profile-<your_42_login>-blue)](https://profile.intra.42.fr/users/<your_42_login>)  
-[![GitHub Follow](https://img.shields.io/github/followers/<your_username>?style=social)](https://github.com/<your_username>)
+[![42 School](https://img.shields.io/badge/42-profile-blue)](https://profile-v3.intra.42.fr/users/naal-jen)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-Nazar963-lightgrey)](https://github.com/Nazar963)
+[![GitHub Follow](https://img.shields.io/github/followers/Nazar963?style=social)](https://github.com/Nazar963)
+
+---
+
+Good luck with your Cpp modules at 42! 🚀
