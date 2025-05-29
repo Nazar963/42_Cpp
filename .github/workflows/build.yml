@@ -1,0 +1,142 @@
+name: C++ Modules Build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    name: ${{ matrix.os }}-${{ matrix.compiler.name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        compiler:
+          - {
+              name: "gcc",
+              cc: "gcc",
+              cxx: "g++"
+            }
+          - {
+              name: "clang",
+              cc: "clang",
+              cxx: "clang++"
+            }
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential make
+
+    - name: Set up compiler
+      run: |
+        echo "CC=${{ matrix.compiler.cc }}" >> $GITHUB_ENV
+        echo "CXX=${{ matrix.compiler.cxx }}" >> $GITHUB_ENV
+
+    - name: Build CPP00
+      run: |
+        cd 42_cpp00/ex00 && make && cd ../..
+        cd 42_cpp00/ex01 && make && cd ../..
+        cd 42_cpp00/ex02 && make && cd ../..
+
+    - name: Build CPP01
+      run: |
+        cd 42_cpp01/ex00 && make && cd ../..
+        cd 42_cpp01/ex01 && make && cd ../..
+        cd 42_cpp01/ex02 && make && cd ../..
+        cd 42_cpp01/ex03 && make && cd ../..
+        cd 42_cpp01/ex04 && make && cd ../..
+        cd 42_cpp01/ex05 && make && cd ../..
+        cd 42_cpp01/ex06 && make && cd ../..
+
+    - name: Build CPP02
+      run: |
+        cd 42_cpp02/ex00 && make && cd ../..
+        cd 42_cpp02/ex01 && make && cd ../..
+        cd 42_cpp02/ex02 && make && cd ../..
+        cd 42_cpp02/ex03 && make && cd ../..
+
+    - name: Build CPP03
+      run: |
+        cd 42_cpp03/ex00 && make && cd ../..
+        cd 42_cpp03/ex01 && make && cd ../..
+        cd 42_cpp03/ex02 && make && cd ../..
+        cd 42_cpp03/ex03 && make && cd ../..
+
+    - name: Build CPP04
+      run: |
+        cd 42_cpp04/ex00 && make && cd ../..
+        cd 42_cpp04/ex01 && make && cd ../..
+        cd 42_cpp04/ex02 && make && cd ../..
+        if [ -d "42_cpp04/ex03" ]; then
+          cd 42_cpp04/ex03 && make && cd ../..
+        fi
+
+    - name: Build CPP05
+      run: |
+        if [ -d "42_cpp05/ex00" ]; then
+          cd 42_cpp05/ex00 && make && cd ../..
+        fi
+        if [ -d "42_cpp05/ex01" ]; then
+          cd 42_cpp05/ex01 && make && cd ../..
+        fi
+        if [ -d "42_cpp05/ex02" ]; then
+          cd 42_cpp05/ex02 && make && cd ../..
+        fi
+        if [ -d "42_cpp05/ex03" ]; then
+          cd 42_cpp05/ex03 && make && cd ../..
+        fi
+
+    - name: Build CPP06
+      run: |
+        if [ -d "42_cpp06/ex00" ]; then
+          cd 42_cpp06/ex00 && make && cd ../..
+        fi
+        if [ -d "42_cpp06/ex01" ]; then
+          cd 42_cpp06/ex01 && make && cd ../..
+        fi
+        if [ -d "42_cpp06/ex02" ]; then
+          cd 42_cpp06/ex02 && make && cd ../..
+        fi
+
+    - name: Build CPP07
+      run: |
+        if [ -d "42_cpp07/ex00" ]; then
+          cd 42_cpp07/ex00 && make && cd ../..
+        fi
+        if [ -d "42_cpp07/ex01" ]; then
+          cd 42_cpp07/ex01 && make && cd ../..
+        fi
+        if [ -d "42_cpp07/ex02" ]; then
+          cd 42_cpp07/ex02 && make && cd ../..
+        fi
+
+    - name: Build CPP08
+      run: |
+        if [ -d "42_cpp08/ex00" ]; then
+          cd 42_cpp08/ex00 && make && cd ../..
+        fi
+        if [ -d "42_cpp08/ex01" ]; then
+          cd 42_cpp08/ex01 && make && cd ../..
+        fi
+        if [ -d "42_cpp08/ex02" ]; then
+          cd 42_cpp08/ex02 && make && cd ../..
+        fi
+
+    - name: Build CPP09
+      run: |
+        if [ -d "42_cpp09/ex00" ]; then
+          cd 42_cpp09/ex00 && make && cd ../..
+        fi
+        if [ -d "42_cpp09/ex01" ]; then
+          cd 42_cpp09/ex01 && make && cd ../..
+        fi
+        if [ -d "42_cpp09/ex02" ]; then
+          cd 42_cpp09/ex02 && make && cd ../..
+        fi
