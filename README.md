@@ -152,7 +152,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++99
 - C++ community for invaluable resources
 
 ## 🤝 Contributing
-Feel free to submit issues or pull requests if you have suggestions for improving the test suite or adding more test cases.
+Feel free to submit issues or pull requests if you have suggestions for improving the application or adding more features.
 
 ## License
 This work is licensed under the MIT License - see [LICENSE](LICENSE) for details.
@@ -171,5 +171,5 @@ For questions or feedback, please open an issue in the repository.
 [![GitHub Follow](https://img.shields.io/github/followers/Nazar963?style=social)](https://github.com/Nazar963)
 
 ---
-
+## 🍀 Goodluck:
 Good luck with your Cpp modules at 42! 🚀
